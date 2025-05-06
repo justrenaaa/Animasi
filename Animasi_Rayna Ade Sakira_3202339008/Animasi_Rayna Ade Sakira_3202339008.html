@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Layout Rayna</title>
+    <link rel="stylesheet" href="bootstrap413/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f3e2;
+            color: #3e2b1f;
+        }
+
+        .navbar {
+            background-color: #4b2e2f;
+        }
+
+        .navbar-brand {
+            color: #fff !important;
+        }
+
+        .navbar-nav .nav-link {
+            color: #fff !important;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #f1c6a3 !important;
+        }
+
+        .jumbotron {
+            background-color: transparent;
+            color: #f1f1f1;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 1); 
+            font-family: 'Playfair Display', serif;
+        }
+
+        .jumbotron-bg {
+            background-image: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .container {
+            text-align: justify;
+        }
+
+        .btn-primary {
+            background-color: #6f4f28;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #8e5b39;
+        }
+
+        .card {
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+            text-align: center;
+        }
+
+        .card-body {
+            background-color: #f5f1e6;
+        }
+
+        .list-group-item {
+            background-color: #f8f3e2;
+            border: none;
+            color: #3e2b1f;
+        }
+
+        .list-group-item:hover {
+            background-color: #4b2e2f;
+            color: #fff;
+        }
+
+        footer {
+            color: #fff;
+        }
+
+        /* Animasi */
+        @keyframes fadeSlideUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-title {
+            animation: fadeSlideUp 1.2s ease-out;
+            animation-fill-mode: both;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">KIM'S COFFEE</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Layanan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container jumbotron mt-4 jumbotron-bg">
+        <h1 class="display-4 animate-title">Selamat Datang di KIM'S COFFEE!</h1>
+        <p class="lead animate-title" style="animation-delay: 0.3s;">Setiap tegukan adalah seni. Kami meracik kopi dengan standar tinggi, menghadirkan rasa terbaik untuk kamu yang menghargai kualitas.</p>
+        <hr class="my-4 animate-title" style="animation-delay: 0.5s;">
+        <p class="animate-title" style="animation-delay: 0.6s;">Kopi hebat lahir dari kebun yang hebat. Temui para petani dan kisah di balik setiap biji.</p>
+        <a class="btn btn-primary btn-lg animate-title" style="animation-delay: 0.8s;" href="#" role="button">Jelajahi Perkebunan Kami</a>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Tentang KIM'S COFFEE</h2>
+                <p>KIM'S COFFEE adalah tempat di mana kualitas bertemu dengan kehangatan. Kami percaya bahwa secangkir kopi yang baik dimulai dari biji kopi terbaik dan niat yang tulus. Dari proses pemetikan, penyangraian, hingga penyajian—setiap langkah kami pikirkan dengan seksama.</p>
+                <p>Di sini, kamu tidak hanya menikmati kopi, tapi juga cerita di baliknya.</p>
+                <h3>Yang Membuat Kami Berbeda</h3>
+                <ul>
+                    <li>Biji kopi pilihan dari petani lokal</li>
+                    <li>Proses sangrai dengan kontrol rasa maksimal</li>
+                    <li>Tempat nyaman untuk bekerja atau bersantai</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h2>Kelas Kopi</h2>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Info Tambahan</h5>
+                        <p class="card-text">Selain kedai, kami juga menyediakan kopi bubuk dan biji sangrai untuk dibawa pulang. Ingin tahu lebih dalam tentang kopi? Ikuti kelas seduh kopi yang tersedia setiap akhir pekan.</p>
+                        <a href="#" class="btn btn-secondary btn-sm">Lihat Info Kelas</a>
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <ul class="list-group">
+                        <li class="list-group-item">Tentang Kami</li>
+                        <li class="list-group-item">Menu Utama</li>
+                        <li class="list-group-item">Workshop & Event</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-center py-3 mt-5">
+        <p>&copy; 2025 KIM'S COFFEE. Hak Cipta Dilindungi.</p>
+    </footer>
+
+    <script src="bootstrap413/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
