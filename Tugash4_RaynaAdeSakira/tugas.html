@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KIM'S COFFEE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #fdfaf6;
+      color: #3e3e3e;
+    }
+
+    header.modern-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 2rem;
+      background-color: #4e342e;
+      color: #fff;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+    }
+
+    .main-nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #fdfaf6;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .main-nav a:hover {
+      color: #ffd180;
+    }
+
+    .modern-layout {
+      display: grid;
+      grid-template-areas:
+        "header header"
+        "sidebar content"
+        "footer footer";
+      grid-template-columns: 1fr 3fr;
+      min-height: 100vh;
+    }
+
+    .modern-layout > header {
+      grid-area: header;
+      text-align: center;
+      font-size: 2rem;
+      background-color: #6d4c41;
+      color: white;
+      padding: 1.5rem;
+      font-family: 'Playfair Display', serif;
+    }
+
+    aside {
+      grid-area: sidebar;
+      background-color: #fcefe3;
+      padding: 2rem;
+    }
+
+    aside h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+    }
+
+    aside ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    aside ul li {
+      margin-bottom: 0.8rem;
+    }
+
+    aside ul li a {
+      text-decoration: none;
+      color: #5d4037;
+      transition: 0.3s;
+    }
+
+    aside ul li a:hover {
+      color: #bf8c5c;
+    }
+
+    main {
+      grid-area: content;
+      padding: 2rem;
+      background-color: #fff;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .produk {
+      background-color: #fff8f1;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .produk:hover {
+      transform: translateY(-5px);
+    }
+
+    .produk img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+
+    .produk h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      color: #4e342e;
+      text-transform: uppercase; /* Membuat nama kopi huruf besar */
+    }
+
+    .produk p {
+      margin: 0.5rem 0;
+    }
+
+    .produk button {
+      background-color: #4e342e;
+      color: white;
+      padding: 0.8rem 1.2rem;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      margin-top: 1rem;
+      width: 100%;
+      max-width: 200px;
+    }
+
+    .produk button:hover {
+      background-color: #bf8c5c;
+    }
+
+    footer {
+      grid-area: footer;
+      background-color: #4e342e;
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+    }
+
+    .best-seller {
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      color: #4e342e;
+      margin-bottom: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      .modern-layout {
+        grid-template-areas:
+          "header"
+          "sidebar"
+          "content"
+          "footer";
+        grid-template-columns: 1fr;
+      }
+      .main-nav {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="modern-header">
+    <div class="logo">KIM'S COFFEE</div>
+    <nav class="main-nav">
+      <a href="#">Beranda</a>
+      <a href="#">Tentang Kami</a>
+      <a href="#">Produk</a>
+      <a href="#">Kontak</a>
+    </nav>
+  </header>
+
+  <div class="modern-layout">
+    <header>Selamat Datang di KIM'S COFFEE</header>
+
+    <aside>
+      <h3>Menu</h3>
+      <ul>
+        <li><a href="#">Coffee Espresso</a></li>
+        <li><a href="#">Coffee Americano</a></li>
+        <li><a href="#">Coffee Latte</a></li>
+        <li><a href="#">Coffee Mocha</a></li>
+        <li><a href="#">Strawberry Fresh</a></li>
+        <li><a href="#">Chocolate Delight</a></li>
+        <li><a href="#">Vanila Mountain</a></li>
+        <li><a href="#">Vanila Affogato</a></li>
+        <li><a href="#">Sugar Rush</a></li>
+        <li><a href="#">Neapolitan</a></li>
+      </ul>
+    </aside>
+
+    <main>
+      <div class="best-seller">Best Seller</div>
+
+      <div class="produk">
+        <img src="https://images.unsplash.com/photo-1610621194741-bd3fa5ce10be?auto=format&fit=crop&w=800&q=80" alt="Espresso" />
+        <h3>Espresso</h3>
+        <p>Rasa kuat yang bikin semangat menyala.</p>
+        <p><strong>Rp 15.000</strong></p>
+        <button>Beli</button>
+      </div>
+
+      <div class="produk">
+        <img src="https://images.unsplash.com/photo-1605477768135-1e5c738dc7e4?auto=format&fit=crop&w=800&q=80" alt="Americano" />
+        <h3>Americano</h3>
+        <p>Kopi hitam yang klasik dan elegan.</p>
+        <p><strong>Rp 20.000</strong></p>
+        <button>Beli</button>
+      </div>
+
+      <div class="produk">
+        <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=800&q=80" alt="Latte" />
+        <h3>Latte</h3>
+        <p>Perpaduan kopi dan susu yang lembut.</p>
+        <p><strong>Rp 25.000</strong></p>
+        <button>Beli</button>
+      </div>
+    </main>
+
+    <footer>
+      &copy; 2025 KIM'S COFFEE. Crafted with love & coffee.
+    </footer>
+  </div>
+</body>
+</html>
